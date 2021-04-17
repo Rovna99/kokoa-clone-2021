@@ -29,6 +29,10 @@
   top: 50px;
 }
 
+.friends-screen__channel-header {
+  font-size: 20px;
+}
+
 @keyframes rotateCog {
   from {
     transform: none;

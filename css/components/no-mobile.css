@@ -3,11 +3,14 @@
   z-index: 99;
   height: 100vh;
   width: 100vw;
-  background-color: var(--yellow);
+  background-color: black;
+  color: var(--df-fontColor);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 32px;
+  text-align: center;
+  line-height: 50px;
   top: 0;
 }
 

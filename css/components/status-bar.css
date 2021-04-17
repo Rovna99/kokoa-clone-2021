@@ -10,7 +10,7 @@
   width: 33%;
 }
 .status-bar__column:first-child span {
-  margin-right: 5px;
+  margin: 0 5px;
 }
 .status-bar__column:nth-child(2) {
   display: flex;

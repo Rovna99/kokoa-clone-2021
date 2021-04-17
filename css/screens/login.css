@@ -1,17 +1,26 @@
+#login-kingsman {
+  background-image: url("../../screenshots/indexlogin3.PNG");
+  background-size: 650px;
+  color: var(--df-fontColor);
+  width: 100%;
+  height: 100%;
+}
+
 .welcome-header {
   margin: 90px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  bottom: 70px;
 }
 .welcome-header__title {
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 30px;
 }
 .welcome-header__text {
   width: 60%;
-  opacity: 0.7;
 }
 #login-form {
   display: flex;
@@ -24,23 +33,26 @@
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #333d1c;
 }
 
 #login-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 3px black;
   transition: border-color 0.3s ease-in-out;
 }
 
 #login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--df-fontColor);
 }
 
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-bottom: 2px solid var(--df-fontColor);
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: var(--df-fontColor);
   cursor: pointer;
   padding: 20px 0px;
   border-radius: 5px;
@@ -51,4 +63,44 @@
   text-decoration: none;
   color: inherit;
   font-size: 13px;
+}
+
+@keyframes Splashhide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#connect-Ksm {
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  position: fixed;
+  animation: Splashhide 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.inputCode {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.05em solid black;
+  animation: typing 7s steps(100);
+  animation-delay: 1.8s;
 }
