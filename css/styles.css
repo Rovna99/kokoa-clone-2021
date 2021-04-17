@@ -21,8 +21,13 @@
 @import "screens/settings.css";
 @import "screens/chat.css";
 
+@font-face {
+  font-family: "Kingsman";
+  src: url("C:/Users/User/Desktop/Cording Program/Font/Chapaza.ttf");
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Kingsman";
   height: 120vh;
   color: #2e363e;
 }
