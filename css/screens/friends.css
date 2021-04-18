@@ -1,33 +1,17 @@
-#friends-dispaly-link {
-  text-align: center;
-  display: block;
-  justify-content: space-between;
-  background-color: #fafafa;
-  padding: 25px;
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-top: -15px;
-}
-
-#friends-dispaly-link i {
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .friends-screen {
   padding: 0px var(--horizontal-space);
 }
 
 .friends-screen__channel {
   margin-top: 25px;
-  border-top: var(--main-border);
-  padding-top: 15px;
 }
 
 .friends-screen__channel-header {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  padding-top: 15px;
   display: flex;
   justify-content: space-between;
-  color: rgba(0, 0, 0, 0.5);
+  border-top: var(--main-border);
 }
 
 @keyframes hideSplashScreen {
@@ -39,3 +23,14 @@
     visibility: hidden;
   }
 }
+
+.user-component__column {
+  margin-left: 20px;
+}
+
+/*
+.Secret-Agent {
+  background-color: #333d1c;
+  border: 4px solid #d0b383;
+}
+*/

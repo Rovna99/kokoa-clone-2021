@@ -6,6 +6,16 @@
   height: 100%;
 }
 
+@keyframes Kingsman-logo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .welcome-header {
   margin: 90px 0px;
   text-align: center;
@@ -14,7 +24,18 @@
   align-items: center;
   position: relative;
   bottom: 70px;
+  transform: translateY(-10px);
+  opacity: 0;
+  animation: Kingsman-logo 1s ease-in-out forwards;
+  animation-delay: 2s;
 }
+
+#Enter-kingsman {
+  opacity: 0;
+  animation: Kingsman-logo 3s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
 .welcome-header__title {
   margin-bottom: 20px;
   font-size: 30px;
@@ -34,13 +55,13 @@
   font-size: 18px;
   margin-bottom: 25px;
   background-color: rgba(0, 0, 0, 0);
-  color: #333d1c;
 }
 
 #login-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   text-shadow: 0 0 3px black;
   transition: border-color 0.3s ease-in-out;
+  color: var(--df-fontColor);
 }
 
 #login-form input::placeholder {
@@ -101,6 +122,6 @@
   overflow: hidden;
   white-space: nowrap;
   border-right: 0.05em solid black;
-  animation: typing 7s steps(100);
+  animation: typing 6s steps(100);
   animation-delay: 1.8s;
 }

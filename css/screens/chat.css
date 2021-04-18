@@ -1,5 +1,5 @@
 #chat-screen {
-  background-color: #abc1d1;
+  background-color: rgb(31, 38, 17);
   height: 120vh;
 }
 
@@ -8,7 +8,7 @@
   top: 0;
   position: fixed;
   width: 100%;
-  background-color: #abc1d1;
+  background-color: rgb(31, 38, 17);
   box-sizing: border-box;
 }
 
@@ -40,9 +40,16 @@
   animation: fadeIn 0.8s linear;
 }
 
+.main-chat2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.8s linear;
+}
+
 .chat__timestamp {
   color: white;
-  background-color: #92a4b2;
+  background-color: rgb(40, 21, 6);
   padding: 15px;
   font-size: 14px;
   border-radius: 25px;
@@ -74,12 +81,22 @@
 }
 
 .message__bubble {
-  background-color: white;
+  background-color: #090b1e;
+  padding: 13px;
+  font-size: 18px;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  margin-right: 5px;
+}
+
+.message__bubble2 {
+  background-color: #090b1e;
   padding: 13px;
   font-size: 18px;
   border-radius: 15px;
   border-top-left-radius: 0px;
   margin-right: 5px;
+  line-height: 22px;
 }
 
 .message__time {
@@ -91,14 +108,6 @@
   justify-content: flex-end;
 }
 
-.message-row--own .message__bubble {
-  background-color: var(--yellow);
-  border-top-right-radius: 0px;
-  border-top-left-radius: 15px;
-  margin-right: 0px;
-  margin-left: 5px;
-}
-
 .message-row--own .message__info {
   flex-direction: row-reverse;
 }
@@ -107,7 +116,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  background-color: #090b1e;
   display: flex;
   justify-content: space-between;
   padding: 5px 25px;
@@ -133,6 +142,8 @@
   border-radius: 20px;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
+  background-color: #090b1e;
+  color: var(--df-fontColor);
 }
 
 .reply__column:last-child > i,
@@ -146,7 +157,7 @@
   top: 15px;
 }
 .reply__column button {
-  background-color: var(--yellow);
+  background-color: var(--df-fontColor);
   border: none;
   width: 32px;
   height: 31px;
@@ -181,4 +192,11 @@
 
 .reply:focus-within {
   transform: translateY(80px);
+}
+
+#Harry-Video,
+#Merlin-Video {
+  display: flex;
+  position: relative;
+  right: 100px;
 }

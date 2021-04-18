@@ -28,8 +28,28 @@
 
 body {
   font-family: "Kingsman";
-  background-color: #333d1c;
+  background-color: #090b1e;
+  color: var(--df-fontColor);
   width: 100vw;
+}
+
+.Secret-Agent {
+  width: 90%;
+  height: 80vh;
+  background-color: #1f2611;
+  border: var(--main-border);
+  border-radius: 20px;
+  position: relative;
+  left: 30px;
+  top: 40px;
+  color: var(--df-fontColor);
+}
+
+.user-component {
+  height: 80px;
+  border-radius: 20px;
+  border: 2px solid var(--df-fontColor);
+  background-color: #281506;
 }
 
 .main-screen {
