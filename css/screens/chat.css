@@ -194,9 +194,7 @@
   transform: translateY(80px);
 }
 
-#Harry-Video,
-#Merlin-Video {
-  display: flex;
+.plz {
   position: relative;
-  right: 100px;
+  top: 15px;
 }
