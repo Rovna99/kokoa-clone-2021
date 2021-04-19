@@ -22,6 +22,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  left: 15px;
 }
 
 .more-suggestions__icon-image {
@@ -39,8 +41,8 @@
 }
 
 .Agent-img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 20px;
   margin-bottom: 20px;
 }
@@ -68,12 +70,15 @@
 }
 
 #S-weapons {
+  width: 400px;
+  height: 180px;
   border-radius: 10px;
   margin-top: 5px;
 }
 
 #S-Equipt {
-  margin-top: 10px;
-  padding-top: 15px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  padding-top: 30px;
   border-top: var(--main-border);
 }
