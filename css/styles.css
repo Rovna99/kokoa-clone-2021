@@ -59,7 +59,7 @@ body {
 .Cidentity {
   font-size: 25px;
   position: fixed;
-  left: 190px;
+  left: 130px;
   bottom: 50px;
   text-shadow: 0 0 30px gray;
   color: var(--df-fontColor);
